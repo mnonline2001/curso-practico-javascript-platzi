@@ -102,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+#Este es un documeto creado para hacer el ejercicio de mandar a gitignore
+documento-para-un-git-ignore.txt
