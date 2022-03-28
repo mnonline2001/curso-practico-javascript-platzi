@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA</title>
+</head>
+<body>
+
+    <h2>QA triángulo isósceles.</h2>
+     <form>
+         <label for="InputladoInclinado">
+             Escribe cuánto mide uno de los dos lados iguales de el triángulo
+         </label>
+         <input id="InputladoInclinado" type="number" />
+
+         <label for="InputBase">
+            Escribe cuánto mide la base de tu triángulo
+        </label>
+        <input id="InputBase" type="number" />
+ 
+         <button type="button" onclick="calcularAltura()">
+            Calcula la altura
+        </button>
+     </form>
+
+    <script>
+        function calcularAltura(){
+            var ladoTriangulo = document.getElementById("InputladoInclinado").value;
+            var baseTriangulo = document.getElementById("InputBase").value;
+            
+            var dividirbase = baseTriangulo / 2
+
+            var baseAlcuadrado = dividirbase * dividirbase
+            
+            var ladoAlcuadrado = ladoTriangulo * ladoTriangulo
+
+            var resta = ladoAlcuadrado - baseAlcuadrado
+
+            const altura = Math.sqrt(resta)
+
+            alert (altura)
+           
+        }
+
+    </script>
+</body>
+</html>
